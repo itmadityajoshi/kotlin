@@ -13,6 +13,10 @@ abstract  class Employee(var name: String, var age: Int, var salary: Float){
     }
 
     abstract fun work()
+
+    open fun code(){
+        println("Code Randomly.")
+    }
 }
 
 
@@ -20,12 +24,19 @@ class WebDeveloper(name: String, age: Int, salary: Float, var language: String):
     override fun work() {
         println("This is an abstract class functions")
     }
+
+    override fun code() {
+        println("Statically typed codeing.")
+    }
+
 }
 
 
 fun main(){
-    val w1 = WebDeveloper("Adiyta", age = 29, salary = 3600.000f, language = "Kotlin")
+    val w1 = WebDeveloper("Adiyta", age = 29, salary = 3600.00f, language = "javascript")
     w1.printDetails()
     w1.work()
+    w1.code()
+
 
 }
