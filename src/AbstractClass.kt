@@ -26,7 +26,7 @@ class WebDeveloper(name: String, age: Int, salary: Float, var language: String):
     }
 
     override fun code() {
-        println("Statically typed codeing.")
+        println("Statically typed coding.")
     }
 
 }
@@ -37,6 +37,4 @@ fun main(){
     w1.printDetails()
     w1.work()
     w1.code()
-
-
 }

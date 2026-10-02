@@ -1,7 +1,8 @@
+/*
 
 
 open class Employee(var name: String, var age: Int, var salary: Float){
-    fun detials() {
+    fun details() {
         println("My name is $name")
         println("My age is $age")
         println("My salary is $salary")
@@ -64,9 +65,9 @@ fun main(){
     )
 
     for (e in team) {
-        e.detials()
+        e.details()
         e.work()
         println()
     }
 
-}
+}*/
