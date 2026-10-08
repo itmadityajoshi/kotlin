@@ -10,7 +10,7 @@ fun countDigit(number: Int): Pair <Int, Int> {
 
     while (n>0){
         val r = n % 10
-        sum = sum + r
+        sum += r
         count++
         n /= 10
 
@@ -25,7 +25,7 @@ fun reverseDigit(number: Int): Int
     var reverse = 0
 
     while (n>0){
-        var r = n % 10
+        val r = n % 10
         reverse = reverse * 10 + r
         n /=10
     }
@@ -39,7 +39,7 @@ fun revString(word: String): String{
     var reverse = ""
 
     while (index >=0 ){
-        var char = word[index]
+        val char = word[index]
         reverse  += char
         index--
     }
@@ -58,7 +58,7 @@ fun main(){
 //    var reverseResult = reverseDigit(54321)
 //    println("The reverse of the number is $reverseResult")
 
-    var reverseResult = revString("Hello")
+    val reverseResult = revString("Hello")
     println("The reverse of the string is $reverseResult")
 
 
