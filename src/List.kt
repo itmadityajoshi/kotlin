@@ -22,6 +22,15 @@ fun main(){
     println()
     println("The first item is ${shapes.first()}")
     println("The last item of the list is : ${shapes.last()}")
+
+    // to get the number of items in a list, use the .count() function
+    println("This list has ${readOnlyShapes.count()} items")
+
+    //To check  that an item is in a list, use the in operator
+    println("circle" in shapes)
+
+
+
 }
 
 
