@@ -29,6 +29,14 @@ fun main(){
     //To check  that an item is in a list, use the in operator
     println("circle" in shapes)
 
+    //To add or remove items from a mutable list, use .add() and .remove() functions respectively:
+     //add pentagon to the list
+
+    shapes.add("pentagon")
+    println(shapes)
+    //remove the first "pentagon" from the list
+    shapes.remove("pentagon")
+    println(shapes)
 
 
 }
